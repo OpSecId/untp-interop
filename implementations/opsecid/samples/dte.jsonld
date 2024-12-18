@@ -1,0 +1,109 @@
+{
+    "type": [
+      "DigitalTraceabilityEvent",
+      "VerifiableCredential"
+    ],
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2",
+      "https://test.uncefact.org/vocabulary/untp/dte/0.5.0/"
+    ],
+    "id": "https://bcregistry.ca/business/123456789/traceability-event",
+    "issuer": {
+      "type": [
+        "CredentialIssuer"
+      ],
+      "id": "did:web:bcregistry.ca",
+      "name": "BC Copper Mines Ltd.",
+      "otherIdentifier": [
+        {
+          "type": [
+            "Identifier"
+          ],
+          "id": "https://bcregistry.ca/business/123456789",
+          "name": "BC Copper Mines Ltd.",
+          "registeredId": "123456789",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://bcregistry.ca/business/",
+            "name": "British Columbia Business Registration Number"
+          }
+        }
+      ]
+    },
+    "validFrom": "2024-06-01T00:00:00Z",
+    "credentialSubject": [
+      {
+        "type": [
+          "TransformationEvent",
+          "Event"
+        ],
+        "id": "https://bcregistry.ca/business/123456789/traceability-event#transformation",
+        "processType": "Smelting",
+        "eventTime": "2024-07-01T00:00:00Z",
+        "action": "Transform",
+        "disposition": "https://ref.gs1.org/cbv/Disp-in_progress",
+        "bizStep": "https://ref.gs1.org/cbv/BizStep-transforming",
+        "bizLocation": "https://id.gs1.org/414/987654321",
+        "sensorElementList": [
+          {
+            "sensorMetadata": {
+              "device": {
+                "type": [
+                  "Item"
+                ],
+                "id": "https://sensors.smelter.com/temperature-sensor",
+                "name": "Smelter Temperature Sensor"
+              },
+              "dataProcessingMethod": "https://standards.org/sensorMethod#5678"
+            },
+            "sensorReport": [
+              {
+                "time": "2024-07-01T01:00:00Z",
+                "sensorType": "https://sensors.smelter.com/model5678",
+                "value": 1200,
+                "uom": "Celsius"
+              }
+            ],
+            "sensorIntegrityProof": "https://integrity.smelter.com/proof5678"
+          }
+        ],
+        "outputEPCList": [
+          {
+            "type": [
+              "Item"
+            ],
+            "id": "https://id.gs1.org/01/09876543211234",
+            "name": "Refined Copper Ingot"
+          }
+        ],
+        "inputEPCList": [
+          {
+            "type": [
+              "Item"
+            ],
+            "id": "https://id.gs1.org/01/12345678901234",
+            "name": "Raw Copper Batch"
+          }
+        ],
+        "inputQuantityList": [
+          {
+            "productId": "https://id.gs1.org/01/12345678901234",
+            "productName": "Raw Copper Batch",
+            "quantity": 5000,
+            "uom": "KGM"
+          }
+        ],
+        "outputQuantityList": [
+          {
+            "productId": "https://id.gs1.org/01/09876543211234",
+            "productName": "Refined Copper Ingot",
+            "quantity": 4800,
+            "uom": "KGM"
+          }
+        ]
+      }
+    ]
+  }
+  

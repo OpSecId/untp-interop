@@ -1,0 +1,99 @@
+{
+    "type": [
+      "DigitalFacilityRecord",
+      "VerifiableCredential"
+    ],
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2",
+      "https://test.uncefact.org/vocabulary/untp/dfr/0.5.0/"
+    ],
+    "id": "https://bcregistry.ca/business/123456789/facility-record",
+    "issuer": {
+      "type": [
+        "CredentialIssuer"
+      ],
+      "id": "did:web:bcregistry.ca",
+      "name": "BC Registry Services",
+      "otherIdentifier": [
+        {
+          "type": [
+            "Identifier"
+          ],
+          "id": "https://bcregistry.ca/business/123456789",
+          "name": "BC Copper Mines Ltd.",
+          "registeredId": "123456789",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://bcregistry.ca/business/",
+            "name": "British Columbia Business Registration Number"
+          }
+        }
+      ]
+    },
+    "validFrom": "2024-01-01T00:00:00Z",
+    "validUntil": "2034-01-01T00:00:00Z",
+    "credentialSubject": {
+      "type": [
+        "Facility"
+      ],
+      "id": "https://bcregistry.ca/business/123456789/facility",
+      "registeredId": "987654321",
+      "description": "Primary Copper Mining Facility",
+      "name": "BC Copper Mine Facility",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "https://bcregistry.ca/business/",
+        "name": "British Columbia Business Registration Number"
+      },
+      "countryOfOperation": "CA",
+      "processCategory": [
+        {
+          "type": [
+            "Classification"
+          ],
+          "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/14100",
+          "code": "14100",
+          "name": "Copper ores and concentrates",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "schemeName": "UN Central Product Classification (CPC)"
+        }
+      ],
+      "operatedByParty": {
+        "type": [
+          "Identifier"
+        ],
+        "id": "https://bcregistry.ca/business/123456789",
+        "name": "BC Copper Mines Ltd.",
+        "registeredId": "123456789",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://bcregistry.ca/business/",
+          "name": "British Columbia Business Registration Number"
+        }
+      },
+      "address": {
+        "streetAddress": "123 Copper Mine Road",
+        "postalCode": "V8W 1T2",
+        "addressLocality": "Victoria",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      },
+      "locationInformation": {
+        "plusCode": "https://plus.codes/8CGRC78W+MM",
+        "geoLocation": {
+          "type": "Point",
+          "coordinates": [
+            -123.3656,
+            48.4284
+          ]
+        }
+      }
+    }
+  }
+  
