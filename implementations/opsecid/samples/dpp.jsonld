@@ -32,8 +32,8 @@
         }
       ]
     },
-    "validFrom": "2024-06-01T00:00:00",
-    "validUntil": "2034-06-01T00:00:00",
+    "validFrom": "2024-06-01T00:00:00Z",
+    "validUntil": "2034-06-01T00:00:00Z",
     "credentialSubject": {
       "type": [
         "Product"
@@ -87,7 +87,7 @@
       },
       "producedAtFacility": {
         "type": [
-          "Facility"
+          "Identifier"
         ],
         "id": "https://bcregistry.ca/business/123456789/facility",
         "name": "Copper Mine Facility - BC",

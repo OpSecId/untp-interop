@@ -1,0 +1,40 @@
+{
+    "name": "Example Company Pty Ltd",
+    "samples": [
+        {
+            "id": "https://test.uncefact.org/vocabulary/untp/dcc/untp-dcc-instance-0.5.0.json",
+            "type": "DigitalConformityCredential",
+            "name": "Product GHG Footprint Certificate",
+            "version": "0.5.0",
+            "mediaType": "application/vc"
+        },
+        {
+            "id": "https://test.uncefact.org/vocabulary/untp/dte/untp-dte-instance-0.5.0.json",
+            "type": "DigitalTraceabilityEvent",
+            "name": "Weaving Events",
+            "version": "0.5.0",
+            "mediaType": "application/vc"
+        },
+        {
+            "id": "https://test.uncefact.org/vocabulary/untp/dfr/untp-dfr-instance-0.5.0.json",
+            "type": "DigitalFacilityRecord",
+            "name": "LiFePO4 Battery Plant",
+            "version": "0.5.0",
+            "mediaType": "application/vc"
+        },
+        {
+            "id": "https://test.uncefact.org/vocabulary/untp/dia/untp-dia-instance-0.2.1.json",
+            "type": "DigitalIdentityAnchor",
+            "name": "Sample business Ltd",
+            "version": "0.2.1",
+            "mediaType": "application/vc"
+        },
+        {
+            "id": "https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-instance-0.5.0.json",
+            "type": "DigitalProductPassport",
+            "name": "EV battery 300Ah.",
+            "version": "0.5.0",
+            "mediaType": "application/vc"
+        }
+    ]
+}

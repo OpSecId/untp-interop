@@ -1,0 +1,26 @@
+{
+    "name": "Open Security and Identity inc.",
+    "samples": [
+        {
+            "id": "https://untp.traceability.site/opsecid/samples/dcc.jsonld",
+            "type": "DigitalConformityCredential",
+            "name": "Mines Permit",
+            "version": "0.5.0",
+            "mediaType": "application/vc"
+        },
+        {
+            "id": "https://untp.traceability.site/opsecid/samples/dia.jsonld",
+            "type": "DigitalIdentityAnchor",
+            "name": "Business Registration",
+            "version": "0.2.1",
+            "mediaType": "application/vc"
+        },
+        {
+            "id": "https://untp.traceability.site/opsecid/samples/dpp.jsonld",
+            "type": "DigitalProductPassport",
+            "name": "Raw Copper Shipment",
+            "version": "0.5.0",
+            "mediaType": "application/vc"
+        }
+    ]
+}
