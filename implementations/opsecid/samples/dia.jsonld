@@ -1,0 +1,59 @@
+{
+    "type": [
+      "DigitalIdentityAnchor",
+      "VerifiableCredential"
+    ],
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2",
+      "https://test.uncefact.org/vocabulary/untp/dia/0.2.1/"
+    ],
+    "id": "did:web:bcregistry.ca:business:123456789#registration",
+    "issuer": {
+      "type": [
+        "CredentialIssuer"
+      ],
+      "id": "did:web:bcregistry.ca",
+      "name": "BC Registry Services",
+      "otherIdentifier": [
+        {
+          "type": [
+            "Identifier"
+          ],
+          "id": "https://bcregistry.ca/business/123456789",
+          "name": "BC Copper Mines Ltd.",
+          "registeredId": "123456789",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://bcregistry.ca/business/",
+            "name": "British Columbia Business Registration Number"
+          }
+        }
+      ]
+    },
+    "validFrom": "2024-01-01T00:00:00",
+    "validUntil": "2034-01-01T00:00:00",
+    "credentialSubject": {
+      "type": [
+        "RegisteredIdentity",
+        "Identifier"
+      ],
+      "id": "did:web:bcregistry.ca:business:123456789",
+      "name": "BC Copper Mines Ltd.",
+      "registeredId": "123456789",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "https://bcregistry.ca/business/",
+        "name": "British Columbia Business Registration Number"
+      },
+      "registerType": "Business",
+      "registrationScopeList": [
+        "https://bcregistry.ca/business/registration",
+        "https://bcregistry.ca/business/updates"
+      ]
+    }
+  }
+  
