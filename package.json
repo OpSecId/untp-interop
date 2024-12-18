@@ -1,0 +1,47 @@
+{
+  "name": "untp-interop",
+  "version": "0.1.0",
+  "description": "Interoperability Tests for UNTP Implementations",
+  "main": "/tests",
+  "type": "module",
+  "scripts": {
+    "test-allure": "npx mocha tests --implementation $IMPLEMENTATION -R allure-mocha -O 'resultsDir=allure-results'",
+    "test": "mocha tests --timeout 15000 --implementation $IMPLEMENTATION",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpSecId/untp-interop"
+  },
+  "keywords": [
+    "Test",
+    "UNTP",
+    "Conformance",
+    "Interoperability"
+  ],
+  "author": {
+    "name": "Open Security and Identity inc.",
+    "email": "support@opsecid.ca",
+    "url": "https://opsecid.ca/"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chai": "^4.3.7"
+  },
+  "devDependencies": {
+    "allure-mocha": "^3.0.6",
+    "chai-json-schema": "^1.5.1",
+    "chai-string": "^1.5.0",
+    "eslint": "^8.54.0",
+    "eslint-plugin-jsdoc": "^46.9.0",
+    "eslint-plugin-unicorn": "^49.0.0",
+    "mocha": "^10.8.2",
+    "yargs": "^17.7.2"
+  },
+  "bugs": {
+    "url": "https://github.com/OpSecId/untp-interop/issues"
+  },
+  "homepage": "https://github.com/OpSecId/untp-interop"
+}

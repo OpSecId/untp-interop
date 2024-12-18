@@ -1,0 +1,268 @@
+{
+  "type": [
+    "DigitalConformityCredential",
+    "VerifiableCredential"
+  ],
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://test.uncefact.org/vocabulary/untp/dcc/0.5.0/"
+  ],
+  "id": "https://example-credentials.com/credentials/1234567890",
+  "issuer": {
+    "type": [
+      "CredentialIssuer"
+    ],
+    "id": "did:web:identifiers.example-issuer.com:67890",
+    "name": "Conformity Certification Authority of Canada",
+    "otherIdentifier": [
+      {
+        "type": [
+          "Identifier"
+        ],
+        "id": "https://id.example.com/01/10012345678901/21/12345",
+        "name": "Copper Mine Certification - BC",
+        "registeredId": "100987654321",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://id.example.com/01/",
+          "name": "Global Trade Identification Number (GTIN)"
+        }
+      }
+    ]
+  },
+  "validFrom": "2024-01-01T00:00:00",
+  "validUntil": "2034-01-01T00:00:00",
+  "credentialSubject": {
+    "type": [
+      "ConformityAttestation",
+      "Attestation"
+    ],
+    "id": "https://exampleCAB.com/certification/123456789",
+    "name": "Conformity Attestation for Copper Mine in BC",
+    "assessorLevel": "3rdParty",
+    "assessmentLevel": "Accredited",
+    "attestationType": "certification",
+    "description": "This certification attests that the Copper Mine located in British Columbia, Canada, conforms to Canadian environmental and safety standards for mining operations as outlined by the Mining Standards Act of Canada.",
+    "issuedToParty": {
+      "type": [
+        "Party"
+      ],
+      "id": "https://www.bcregistry.ca/business/123456789",
+      "name": "BC Copper Mines Ltd.",
+      "registeredId": "123456789",
+      "idScheme": {
+        "type": [
+          "IdentifierScheme"
+        ],
+        "id": "https://bcregistry.ca/business/",
+        "name": "British Columbia Business Registration Number"
+      },
+      "description": "A copper mining company operating in British Columbia, Canada."
+    },
+    "authorisation": [
+      {
+        "type": [
+          "Endorsement"
+        ],
+        "id": "https://authority.gov/schemeBC/234567890",
+        "name": "Accreditation under the Canadian Environmental Standards for Mining.",
+        "trustmark": {
+          "fileName": "Environmental Compliance Trustmark",
+          "fileType": "image/png",
+          "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
+        },
+        "issuingAuthority": {
+          "type": [
+            "Identifier"
+          ],
+          "id": "https://id.example.com/01/10012345678901/21/12345",
+          "name": "Copper Mine Certification - BC",
+          "registeredId": "100987654321",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://id.example.com/01/",
+            "name": "Global Trade Identification Number (GTIN)"
+          }
+        },
+        "endorsementEvidence": {
+          "linkURL": "https://files.certification-authority.com/1234567.json",
+          "linkName": "Conformity Certificate - BC Copper Mine",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+        }
+      }
+    ],
+    "conformityCertificate": {
+      "linkURL": "https://files.certification-authority.com/1234567.json",
+      "linkName": "Conformity Certificate - BC Copper Mine",
+      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+      "hashDigest": "987654321",
+      "hashMethod": "SHA-256",
+      "encryptionMethod": "AES"
+    },
+    "auditableEvidence": {
+      "linkURL": "https://files.certification-authority.com/1234567.json",
+      "linkName": "Auditable Evidence - BC Copper Mine",
+      "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc",
+      "hashDigest": "987654321",
+      "hashMethod": "SHA-256",
+      "encryptionMethod": "AES"
+    },
+    "scope": {
+      "type": [
+        "ConformityAssessmentScheme",
+        "Standard"
+      ],
+      "id": "https://www.canadianminingstandards.ca/documents/MiningStandardsAct2023.pdf",
+      "name": "Canadian Mining Standards Act 2023",
+      "issuingParty": {
+        "type": [
+          "Identifier"
+        ],
+        "id": "https://bcregistry.ca/business/123456789",
+        "name": "BC Copper Mines Ltd.",
+        "registeredId": "123456789",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://bcregistry.ca/business/",
+          "name": "British Columbia Business Registration Number"
+        }
+      },
+      "issueDate": "2023-11-01",
+      "trustmark": {
+        "fileName": "Environmental Compliance Trustmark",
+        "fileType": "image/png",
+        "file": "iVBORw0KGgoAAAANSUhEUgAAADkAAAA2CAYAAAB9TjFQAAAABGdBTUEAAi/9H3pWy6vI9uFdAAAAAElFTkSuQmCC"
+      }
+    },
+    "assessment": [
+      {
+        "type": [
+          "ConformityAssessment",
+          "Declaration"
+        ],
+        "assessmentDate": "2024-01-01",
+        "id": "https://exampleCAB.com/assessment/1234567890",
+        "referenceStandard": {
+          "type": [
+            "Standard"
+          ],
+          "id": "https://www.canadianminingstandards.ca/documents/MiningStandardsAct2023.pdf",
+          "name": "Canadian Mining Standards Act 2023",
+          "issuingParty": {
+            "type": [
+              "Identifier"
+            ],
+            "id": "https://bcregistry.ca/business/123456789",
+            "name": "BC Copper Mines Ltd.",
+            "registeredId": "123456789",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://bcregistry.ca/business/",
+              "name": "British Columbia Business Registration Number"
+            }
+          },
+          "issueDate": "2023-11-01"
+        },
+        "referenceRegulation": {
+          "type": [
+            "Regulation"
+          ],
+          "id": "https://laws.justice.gc.ca/MiningRegulations2023",
+          "name": "Canadian Mining Regulation 2023",
+          "jurisdictionCountry": "Canada",
+          "administeredBy": {
+            "type": [
+              "Identifier"
+            ],
+            "id": "https://bcregistry.ca/business/123456789",
+            "name": "BC Copper Mines Ltd.",
+            "registeredId": "123456789",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://bcregistry.ca/business/",
+              "name": "British Columbia Business Registration Number"
+            }
+          },
+          "effectiveDate": "2023-12-01"
+        },
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ],
+            "id": "https://www.canadianminingstandards.ca/documents/MiningStandardsAct2023#Environment",
+            "name": "Environmental Protection Guidelines",
+            "thresholdValues": [
+              {
+                "metricName": "GHG emissions intensity",
+                "metricValue": {
+                  "value": 15,
+                  "unit": "KGM"
+                },
+                "score": "A",
+                "accuracy": 0.05
+              }
+            ]
+          }
+        ],
+        "declaredValue": [
+          {
+            "metricName": "GHG emissions intensity",
+            "metricValue": {
+              "value": 14,
+              "unit": "KGM"
+            },
+            "score": "A",
+            "accuracy": 0.05
+          }
+        ],
+        "conformance": true,
+        "conformityTopic": "environment.emissions",
+        "assessedFacility": [
+          {
+            "type": [
+              "Facility"
+            ],
+            "id": "https://bcregistry.ca/business/123456789/facility",
+            "name": "Copper Mine Facility - BC",
+            "registeredId": "987654321",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://bcregistry.ca/business/",
+              "name": "British Columbia Business Registration Number"
+            },
+            "locationInformation": {
+              "plusCode": "https://plus.codes/1234+5678",
+              "geoLocation": {
+                "type": "Point",
+                "coordinates": [
+                  -123.3656,
+                  48.4284
+                ]
+              }
+            },
+            "address": {
+              "streetAddress": "123 Copper Mine Road",
+              "postalCode": "V8W 1T2",
+              "addressLocality": "Victoria",
+              "addressRegion": "BC",
+              "addressCountry": "CA"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
