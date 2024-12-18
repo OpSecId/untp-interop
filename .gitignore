@@ -12,7 +12,6 @@ cookiesFile
 results/
 mochawesome-report/
 TAGS
-config.json
 node_modules/
 package-lock.json
 *.vswp
