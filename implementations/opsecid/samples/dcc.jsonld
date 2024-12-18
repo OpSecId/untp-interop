@@ -12,7 +12,7 @@
     "type": [
       "CredentialIssuer"
     ],
-    "id": "did:web:identifiers.example-issuer.com:67890",
+    "id": "did:web:untp.traceability.site:opsecid",
     "name": "Conformity Certification Authority of Canada",
     "otherIdentifier": [
       {

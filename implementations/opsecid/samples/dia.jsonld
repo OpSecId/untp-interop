@@ -39,7 +39,7 @@
         "RegisteredIdentity",
         "Identifier"
       ],
-      "id": "did:web:bcregistry.ca:business:123456789",
+      "id": "did:web:untp.traceability.site:opsecid",
       "name": "BC Copper Mines Ltd.",
       "registeredId": "123456789",
       "idScheme": {

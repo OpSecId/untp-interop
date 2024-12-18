@@ -12,7 +12,7 @@
       "type": [
         "CredentialIssuer"
       ],
-      "id": "did:web:bcregistry.ca",
+      "id": "did:web:untp.traceability.site:opsecid",
       "name": "BC Registry Services",
       "otherIdentifier": [
         {

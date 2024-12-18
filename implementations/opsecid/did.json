@@ -1,0 +1,34 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/jwk/v1",
+        "https://w3id.org/security/multikey/v1"
+    ],
+    "id": "did:web:untp.traceability.site:opsecid",
+    "verificationMethod": [
+        {
+            "id": "did:web:untp.traceability.site:opsecid#jwk",
+            "type": "JsonWebKey",
+            "controller": "did:web:untp.traceability.site:opsecid",
+            "publicKeyJwk": {
+                "kty": "OKP",
+                "crv": "Ed25519",
+                "x": "-yIPARwDEqVKl6l0jl3A9opcjnnjHoZ4r_o6seBfxEQ"
+            }
+        },
+        {
+            "id": "did:web:untp.traceability.site:opsecid#multikey",
+            "type": "Multikey",
+            "controller": "did:web:untp.traceability.site:opsecid",
+            "publicKeyMultibase": "z6MkwMaVueYP9pYSTKxtRSMzgzsSkpx1wrhwdq8MEHFxtHdu"
+        }
+    ],
+    "authentication": [
+        "did:web:untp.traceability.site:opsecid#jwk",
+        "did:web:untp.traceability.site:opsecid#multikey"
+    ],
+    "assertionMethod": [
+        "did:web:untp.traceability.site:opsecid#jwk",
+        "did:web:untp.traceability.site:opsecid#multikey"
+    ]
+}
