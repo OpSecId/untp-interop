@@ -1,0 +1,41 @@
+{
+    "name": "BC Gov",
+    "issuers": [
+        {
+            "id": "did:web:registry.digitaltrust.gov.bc.ca:mines-act:chief-permitting-officer",
+            "name": "Chief Permitting Officer"
+        }
+    ],
+    "samples": [
+        {
+            "id": "https://publisher.orgbook.gov.bc.ca/credentials/4206bf27-5273-495a-ac5f-41616bc437e2",
+            "type": "DigitalConformityCredential",
+            "name": "Mines Act Permit (VC-JOSE-COSE)",
+            "version": "0.5.0",
+            "mediaType": "application/vc+jwt"
+        },
+        {
+            "id": "https://publisher.orgbook.gov.bc.ca/credentials/4206bf27-5273-495a-ac5f-41616bc437e2",
+            "type": "DigitalConformityCredential",
+            "name": "Mines Act Permit (VC-DATA-INTEGRITY)",
+            "version": "0.5.0",
+            "mediaType": "application/vc",
+            "cryptosuite": ["eddsa-jcs-2022"]
+        }
+    ],
+    "extensions": [
+        {
+            "id": "https://publisher.orgbook.gov.bc.ca/credentials/4206bf27-5273-495a-ac5f-41616bc437e2",
+            "type": "BCMinesActPermitCredential",
+            "name": "BC Mines Act Permit Credential",
+            "version": "1.0",
+            "context": "",
+            "schema": ""
+        }
+    ],
+    "discoverability": [
+        {
+            "id": ""
+        }
+    ]
+}

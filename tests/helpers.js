@@ -49,6 +49,8 @@ export function extractCredential(response) {
     try {
         if (response.contentType === 'application/json') {
             credential = response.data;
+        } else if (response.contentType === 'application/ld+json') {
+            credential = JSON.parse(response.data);
         } else if (response.contentType === 'application/vc') {
             credential = JSON.parse(response.data);
         } else if (response.contentType === 'application/vc+jwt') {
