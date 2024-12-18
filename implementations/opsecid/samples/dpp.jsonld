@@ -32,6 +32,13 @@
         }
       ]
     },
+    "credentialStatus": {
+      "id": "https://untp.traceability.site/opsecid/samples/status/1#4000",
+      "type": "BitstringStatusListEntry",
+      "statusPurpose": "revocation",
+      "statusListIndex": "4000",
+      "statusListCredential": "https://untp.traceability.site/opsecid/samples/status/1"
+    },
     "validFrom": "2024-06-01T00:00:00Z",
     "validUntil": "2034-06-01T00:00:00Z",
     "credentialSubject": {

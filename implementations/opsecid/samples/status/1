@@ -1,0 +1,12 @@
+{
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2"
+    ],
+    "type": ["VerifiableCredential", "BitstringStatusListCredential"],
+    "issuer": "did:web:untp.traceability.site:opsecid",
+    "credentialSubject": {
+      "type": "BitstringStatusList",
+      "statusPurpose": "revocation",
+      "encodedList": "uH4sIAAAAAAAAA-3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAIC3AYbSVKsAQAAA"
+    }
+  }
